@@ -45,3 +45,28 @@ typeof(an) # symbol
 form <- y ~ a + b + c
 as.character(form)  ## length 3
 deparse(form)       ## like the input
+
+#11.12. read and file 
+fram <- read.csv(file.choose())
+
+#13 attach, R defaults to performing actions on this particular data set.
+attach(fram)
+
+#14 detach, If you finish with an attached data set and want to work with another data set, you should detach the first one
+detach(fram)
+
+#15 view, is a function that tells R to open a new window so that we can look at the data set.
+View(fram)
+
+#16.17 quantile,summary,Determine the mean, median, and distribution of continuous variables
+quantile(salary)
+summary(salary)
+
+#18 table, Determine the number and proportion
+table(rank)
+
+#19 prop, is proportion of values
+prop.table(table(rank))
+
+#20 na, let you work with not available values, and here it ommit them
+na.omit(rank)
