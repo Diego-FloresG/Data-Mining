@@ -10,3 +10,5 @@
 ### Evaluation
 
 - Flores Gonzalez Luis Diego C16211486
+
+- Jimenez Ramirez Julio Fabian 17212147
