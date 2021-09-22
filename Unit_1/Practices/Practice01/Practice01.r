@@ -7,19 +7,13 @@
 # Check that Mean(Xn)->E(X) as you rerun your script while increasing N
 
 # Hint:
-# 1. Initialize sample size
-randNum <-  1000000
-# 2. Initialize counter
-counter <- 0
-# 3. loop for(i in rnorm(size))
-for (i in rnorm(randNum)) {
-  if (i > -1 & i < 1){
-    counter <- counter + 1
+randNum <-  100000                  # 1. Initialize sample size
+counter <- 0                        # 2. Initialize counter
+for (i in rnorm(randNum)) {         # 3. loop for(i in rnorm(size))
+  if (i > -1 & i < 1){              # 4. Check if the iterated variable falls
+    counter <- counter + 1          # 5. Increase counter if the condition is true
   }
-}
-# 4. Check if the iterated variable falls
-# 5. Increase counter if the condition is true
-# 6. return a result <- counter / N
+}                                   # 6. return a result <- counter / N
 answer <- (counter / randNum) * 100
 print(answer)
 
