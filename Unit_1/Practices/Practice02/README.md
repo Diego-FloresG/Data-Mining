@@ -61,59 +61,59 @@ deparse(form) ## like the input
 11. Read
 
 ```r
-
+fram <- read.csv(file.choose())
 ```
 
 12. File
 
 ```r
-
+fram <- read.csv(file.choose())
 ```
 
 13. Attach, R defaults to performing actions on this particular data set.
 
 ```r
-
+attach(fram)
 ```
 
 14. Detach, If you finish with an attached data set and want to work with another data set, you should detach the first one.
 
 ```r
-
+detach(fram)
 ```
 
 15. View, is a function that tells R to open a new window so that we can look at the data set.
 
 ```r
-
+View(fram)
 ```
 
 16. Quantile
 
 ```r
-
+quantile(salary)
 ```
 
 17. Summary, Determine the mean, median, and distribution of continuous variables
 
 ```r
-
+summary(salary)
 ```
 
 18. Table, Determine the number and proportion.
 
 ```r
-
+table(rank)
 ```
 
 19. Prop, is proportion of values.
 
 ```r
-
+prop.table(table(rank))
 ```
 
 20. na, let you work with not available values, and here it ommit them.
 
 ```r
-
+na.omit(rank)
 ```
