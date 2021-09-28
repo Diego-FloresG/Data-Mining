@@ -65,3 +65,10 @@ labs(title="Countries 2013", x="Fertility Rate", y="Life Expectancy", colour="Co
 ```
 
 ![Image](../img/test_1_3.JPG)
+
+As we can see in the 1960 plot, Europe have the most countries with higher life expectancy, but at the same time the lowest fertility rate.
+In the other hand, Africa have the most countries with lower life expectancy, but higher fertility rate, so we can say it might be a correlation.
+
+Looking at the 2013 plot, Europe still at the top of life expectancy but some Asian countries are at the top too.
+Africa still looks the same, lowest life expectancy and highest fertility rate.
+Overall in 2013 the average life expectancy increased but fertility rate decreased in some cases.
