@@ -1,6 +1,6 @@
 # Data Mining
 
-## Unit 1
+## Unit 2
 
 ### Practices
 
