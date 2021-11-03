@@ -13,7 +13,7 @@ Cars from "[Project datasets](https://perso.telecom-paristech.fr/eagan/class/igr
 
 ### 2. Read the csv and analyze the data with R
 
-Definimos la ruta del archivo csv el cual se inicializar en una variable con el metodo read.csv y se define el nombre de las columnas.
+We define the path of the csv file which will be initialized in a variable with the read.csv method and the name of the columns is defined.
 
 ```r
 setwd("E:/Programas TEC/TEC/Mineria de datos/Practicas/Flores_Practicas/Unit 2/Practica 1")
