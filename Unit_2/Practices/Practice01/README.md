@@ -70,6 +70,7 @@ v + geom_histogram(binwidth = 10, aes(fill=Origin),color="Black") + facet_grid(O
 ![Imagen 4](../../img/practica_1_3.png)
 
 ### 3.3. The third a graph that tells us something statistical such as the distribution of the data and containing the theme layer.
+
 ```r
 #theme
 o <- ggplot(cars, aes(x=Horsepower))
@@ -77,7 +78,8 @@ h <- o + geom_histogram(binwidth = 10, aes(fill=Acceleration), color="Black")
 
 h
 ```
-![Imagen 1](https://github.com/Diego-FloresG/Data-Mining/tree/Unit_2/Unit_2/img/theme22.PNG)
+
+![Imagen 1](../../img/theme22.PNG)
 
 ```r
 h +
@@ -95,7 +97,8 @@ h +
         plot.title = element_text(color = "DarkBlue",
                                   size = 25,
                                   family = "Courier"))
-        
+
 h
 ```
-![Imagen 1](https://github.com/Diego-FloresG/Data-Mining/tree/Unit_2/Unit_2/img/theme21.PNG)
+
+![Imagen 1](../../img/theme21.PNG)
