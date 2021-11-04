@@ -71,6 +71,8 @@ v + geom_histogram(binwidth = 10, aes(fill=Origin),color="Black") + facet_grid(O
 
 ### 3.3. The third a graph that tells us something statistical such as the distribution of the data and containing the theme layer.
 
+To show the data in a more efficient way, we display the details to show the title of the following graph where you can see the number of cars that have a specific value of horsepower where you can see that there is a trend between 80 and 100, showing that less fast cars have been made, possibly because they are city cars that do not require as much speed.
+
 ```r
 #theme
 o <- ggplot(cars, aes(x=Horsepower))
