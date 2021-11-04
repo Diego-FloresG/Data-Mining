@@ -37,6 +37,6 @@ h +
         legend.justification = c(1,1),
         plot.title = element_text(color = "DarkBlue",
                                   size = 25,
-                                  family = "Courier")
+                                  family = "Courier"))
         
 h
