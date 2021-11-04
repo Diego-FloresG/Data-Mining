@@ -77,7 +77,7 @@ h <- o + geom_histogram(binwidth = 10, aes(fill=Acceleration), color="Black")
 
 h
 ```
-![Imagen 1](https://github.com/Diego-FloresG/Data-Mining/tree/Unit_2/Unit_2/img/theme22.png)
+![Imagen 1](https://github.com/Diego-FloresG/Data-Mining/tree/Unit_2/Unit_2/img/theme22.PNG)
 
 ```r
 h +
@@ -98,4 +98,4 @@ h +
         
 h
 ```
-![Imagen 1](https://github.com/Diego-FloresG/Data-Mining/tree/Unit_2/Unit_2/img/theme21.png)
+![Imagen 1](https://github.com/Diego-FloresG/Data-Mining/tree/Unit_2/Unit_2/img/theme21.PNG)
