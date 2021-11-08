@@ -6,6 +6,10 @@
 
 > - [Practice #1](https://github.com/Diego-FloresG/Data-Mining/tree/Unit_2/Unit_2/Practices/Practice01)
 
+### Test
+
+> - [Test #1](https://github.com/Diego-FloresG/Data-Mining/tree/Unit_2/Unit_2/Evaluation)
+
 ### Researchs
 
 ### Evaluation
