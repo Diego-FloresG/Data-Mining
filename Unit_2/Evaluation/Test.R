@@ -44,19 +44,26 @@ w <- ggplot(data=movies_filtered,aes(x=Genre, y=GrossPercentUS))
 
 # Components of the graph are changed so that it is the same as the previous image of the exam
 w <- w + geom_jitter(aes(size=BudgetinMillions,colour=Studio))+
+  #y tag
   ylab("Gross % US")+
+  #title
   ggtitle("Domestic Gross % by Genre") +
+  #the box plot characteristics
   geom_boxplot(alpha=0.7,outlier.colour=NA) +
   theme(
-    axis.title.x = element_text(colour="Blue",size=20),
-    axis.title.y = element_text(colour="Blue",size=20),
+    # the x and y axis title colours and size
+    axis.title.x = element_text(colour="Purple",size=20),
+    axis.title.y = element_text(colour="Purple",size=20),
+    #the x and y axis interval text size
     axis.text.x=element_text(size=10),
     axis.text.y=element_text(size=10),
+    #the description size text
     plot.title=element_text(size=25),
     legend.title=element_text(size=10),
     legend.text=element_text(size=10),
+    #the font 
     text=element_text(family="Comic Sans MS")
   )
-
+#call the plot
 w$labels$size <- "Budget $M"
 w
