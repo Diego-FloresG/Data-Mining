@@ -1,5 +1,7 @@
 #We already had the path at downloads
 getwd()
+setwd("E:/Programas TEC/TEC/Mineria de datos/Clone/DataMining/MachineLearning/SimpleLinearRegression")
+getwd()
 
 # Importing the dataset
 dataset <- read.csv('Salary_Data.csv')
@@ -18,8 +20,7 @@ training_set <- subset(dataset, split == TRUE)
 test_set <- subset(dataset, split == FALSE)
 
 # Fitting Simple Linear Regression to the Training set
-regressor = lm(formula = Salary ~ YearsExperience,
-               data = dataset)
+regressor = lm(formula = Salary ~ YearsExperience, data = dataset)
 summary(regressor)
 
 # Predicting the Test set results
