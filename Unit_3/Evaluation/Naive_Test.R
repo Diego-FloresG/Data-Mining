@@ -1,37 +1,40 @@
+# we get the directory we are using and then we change it and verify it changes
 getwd()
 setwd("E:/Programas TEC/TEC/Mineria de datos/Clone/DataMining/MachineLearning")
 getwd()
 
-#Importar y seccionar dataset
+# We import the dataset
 dataset <- read.csv('Social_Network_Ads.csv')
 dataset <- dataset[, 3:5]
 
-#Codificaci�n de la funci�n de destino como factor
+# we encode the data from the column Purchased 
 dataset$Purchased = factor(dataset$Purchased, levels = c(0, 1))
 
-#Dividir el dataset en conjunto de entrenamiento y de prueba
+# import the library caTools and split the the dataset into training and testing set .75 and .25 respectively 
 library(caTools)
 split <- sample.split(dataset$Purchased, SplitRatio = 0.75)
 training_set <- subset(dataset, split == TRUE)
 test_set <- subset(dataset, split == FALSE)
 
-#Escala de caracter�sticas
+# Scale the third column so it normalize the data, so it's more accurate when we use the predictive algorithm
 training_set[-3] = scale(training_set[-3])
 test_set[-3] = scale(test_set[-3])
 
-#Adaptaci�n de la regresi�n log�stica al conjunto de entrenamiento
+# we import the library e1071 and implemente the function naiveBayes
+# where the independent values X are the third column of the training set
+# and Y is the trainingset where we will try the prediction
 library(e1071)
 classifier = naiveBayes(x = training_set[-3], y = training_set$Purchased)
 
-#Prediciendo los resultados del conjunto de prueba
+# Classify the testset, and specify the prediction to the third column 
 y_pred = predict(classifier, newdata = test_set[-3])
 y_pred
 
-#Haciendo una matriz de confusi�n
+# Apply the confusion table, where we evaluate the precision of the test
 cm = table(test_set[, 3], y_pred)
 cm
 
-#Visualizaci�n de los resultados del conjunto de entrenamiento
+# Visualize the training set using the library ElemStatLearn
 library(ElemStatLearn)
 set = training_set
 X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
@@ -47,7 +50,7 @@ contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
-#Visualizaci�n de los resultados del conjunto de prueba
+# Visualize the testing set using the ElemStatLearn
 library(ElemStatLearn)
 set = test_set
 X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
