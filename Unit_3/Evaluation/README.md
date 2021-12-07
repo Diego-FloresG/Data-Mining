@@ -40,7 +40,7 @@ y_pred = predict(classifier, newdata = test_set[-3])
 y_pred
 ```
 
-###Result:
+Result:
 
 ```r
 > y_pred
@@ -55,7 +55,7 @@ cm = table(test_set[, 3], y_pred)
 cm
 ```
 
-###Result:
+Result:
 
 ```r
 > cm = table(test_set[, 3], y_pred)
@@ -83,7 +83,12 @@ points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
 
-###Result:
+Result:
+#### we can see the results where every 0.01 is represented by a point red or green
+#### the values used where X=Age and Y= Estimated Salary
+#### the implemented values are the classified data
+#### where is delimited by the colour
+#### and the dots are the real data and the background the prediction
 
 ![Result_1](../img/Naive_1.png)
 
@@ -106,5 +111,7 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
 
 Result:
+#### Very similar to the other result but we are visualizing the test set
+####
 
 ![Result_1](../img/Naive_2.png)
