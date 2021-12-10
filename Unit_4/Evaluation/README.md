@@ -1,6 +1,6 @@
 # Evaluation 4: K-means
 
-Dataset directory change
+Dataset directory change.
 
 ```r
 getwd()
@@ -8,13 +8,13 @@ setwd("E:/Programas TEC/TEC/Mineria de datos/Practicas/Flores_Practicas/Unit_4/i
 getwd()
 ```
 
-Import and select iris dataset
+Import and select iris dataset.
 
 ```r
 dataset = read.csv('iris.csv')
 ```
 
-We select all the characteristics of the irises, without the categories
+We select all the characteristics of the irises, without the categories.
 
 ```r
 dt = dataset[1:4]
@@ -38,7 +38,7 @@ Result:
 ...
 ```
 
-Using the elbow method to find the optimal number of groups to use in the kmean model
+Using the elbow method to find the optimal number of groups to use in the kmean model.
 
 ```r
 TEM <- function(dataset){
@@ -54,7 +54,7 @@ TEM <- function(dataset){
 }
 ```
 
-We show the graph that shows the recommendation of possible clusters quantity
+We show the graph that shows the recommendation of possible clusters quantity.
 
 ```r
 TEM(dt)
@@ -74,7 +74,7 @@ Clusters <- function(dataset, cnt){
 }
 ```
 
-We create a variable of the new k-means model with the selected dataset and the number of clusters
+We create a variable of the new k-means model with the selected dataset and the number of clusters.
 
 ```r
 ykmeans <- Clusters(dt, 3)
