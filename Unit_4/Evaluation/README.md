@@ -64,7 +64,7 @@ Result:
 
 ![Elbow](../img/Elbow.png)
 
-Fit K-Means to the data set
+Fit K-Means to the data set.
 
 ```r
 Clusters <- function(dataset, cnt){
@@ -80,7 +80,7 @@ We create a variable of the new k-means model with the selected dataset and the 
 ykmeans <- Clusters(dt, 3)
 ```
 
-Visualizing the clusters
+Visualizing the clusters.
 
 ```r
 library(cluster)
