@@ -39,7 +39,7 @@ Result:
 ```
 
 Using the elbow method to find the optimal number of groups to use in the kmean model.
-
+To reduce repetition and better legibility we make all this process into a function 
 ```r
 TEM <- function(dataset){
   set.seed(6)
@@ -64,7 +64,9 @@ Result:
 
 ![Elbow](../img/Elbow.png)
 
-Fit K-Means to the data set.
+Fit K-Means to the data set. 
+Taking in consideration the kmeans, we specifiy the dataset and centers for the clusters
+Set the seed and use the kmeans function
 
 ```r
 Clusters <- function(dataset, cnt){
@@ -81,6 +83,9 @@ ykmeans <- Clusters(dt, 3)
 ```
 
 Visualizing the clusters.
+Import the cluster library
+Espcify the datasource, the k means variable 
+and show the relation with Components 1 and Components 2
 
 ```r
 library(cluster)
