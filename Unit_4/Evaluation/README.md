@@ -65,7 +65,7 @@ Result:
 ![Elbow](../img/Elbow.png)
 
 Fit K-Means to the data set. 
-Taking in consideration the kmeans, we specifiy the dataset and centers for the clusters
+Taking in consideration the kmeans, we specifiy the dataset and centers for the clusters.
 Set the seed and use the kmeans function
 
 ```r
@@ -82,9 +82,7 @@ We create a variable of the new k-means model with the selected dataset and the 
 ykmeans <- Clusters(dt, 3)
 ```
 
-Visualizing the clusters.
-Import the cluster library
-Espcify the datasource, the k means variable 
+Visualizing the clusters.Import the cluster library.Espcify the datasource, the k means variable 
 and show the relation with Components 1 and Components 2
 
 ```r
