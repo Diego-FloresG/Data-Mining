@@ -39,7 +39,8 @@ Result:
 ```
 
 Using the elbow method to find the optimal number of groups to use in the kmean model.
-To reduce repetition and better legibility we make all this process into a function 
+To reduce repetition and better legibility we make all this process into a function
+
 ```r
 TEM <- function(dataset){
   set.seed(6)
@@ -56,6 +57,8 @@ TEM <- function(dataset){
 
 We show the graph that shows the recommendation of possible clusters quantity.
 
+The way this number of clusters is determined is the point on the graph before the plotted line begins to normalize. In this case it would be number 3.
+
 ```r
 TEM(dt)
 ```
@@ -64,7 +67,7 @@ Result:
 
 ![Elbow](../img/Elbow.png)
 
-Fit K-Means to the data set. 
+Fit K-Means to the data set.
 Taking in consideration the kmeans, we specifiy the dataset and centers for the clusters.
 Set the seed and use the kmeans function
 
@@ -82,7 +85,7 @@ We create a variable of the new k-means model with the selected dataset and the 
 ykmeans <- Clusters(dt, 3)
 ```
 
-Visualizing the clusters.Import the cluster library.Espcify the datasource, the k means variable 
+Visualizing the clusters.Import the cluster library.Espcify the datasource, the k means variable
 and show the relation with Components 1 and Components 2
 
 ```r
@@ -102,7 +105,11 @@ clusplot(dt,
 
 Result:
 
+It can be seen that the k means prediction shows three data sets that represent the previously eliminated categories, where if it is compared with the visualization of the original data, the very similar relationship that exists can be observed.
+
 ![kmeans](../img/kmean_iris.png)
+
+### K-means explication:
 
 K-means clustering (MacQueen 1967) is one of the most commonly used unsupervised machine learning algorithm for partitioning a given data set into a set of k groups (i.e. k clusters), where k represents the number of groups pre-specified by the analyst. It classifies objects in multiple groups (i.e., clusters), such that objects within the same cluster are as similar as possible (i.e., high intra-class similarity), whereas objects from different clusters are as dissimilar as possible (i.e., low inter-class similarity). In k-means clustering, each cluster is represented by its center (i.e, centroid) which corresponds to the mean of points assigned to the cluster.
 
